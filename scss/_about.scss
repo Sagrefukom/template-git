@@ -1,0 +1,41 @@
+.about {
+    background-color: $bg-color;
+    position: relative;
+
+    &__container {
+        @include flex-mobile ();
+        max-width: 1600px;
+        color: $text-color-dark-bg;
+    }
+    &__wrapper {
+        max-width: 1200px;
+        align-self: baseline;
+        position: relative;
+        
+    }
+    &__sidebar {
+        @include flex-mobile ();
+        max-width: 300px;
+
+        @media (min-width:1600px) {
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin-right: 150px;
+            
+        }
+        &.sidebar-fixed {
+            display: none;
+            position: fixed;
+            top: 0;
+            margin-top: 150px;
+            // position: sticky;
+            // bottom: 0;
+            // left: 100%;
+
+            @media (min-width:1600px) {
+                display: block;
+            }
+        }
+    }
+}

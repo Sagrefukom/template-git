@@ -1,0 +1,49 @@
+.carousel-indicators {
+  margin: 0 auto 20px !important;
+  max-width: 1600px;
+  z-index: 499 !important;
+
+  &__horizon {
+    
+    @media (min-width: 992px) {
+      justify-content: flex-start !important;
+    }
+  }
+
+  &__top-games {
+    position: relative !important;
+    justify-content: flex-start !important;
+  }
+  
+
+  &__item {
+    width: 15px !important;
+    height: 15px !important;
+    border-radius: 15px !important;
+    border: 0 !important;
+
+    &.active {
+      background: $main-orange-color !important;
+    }
+    &-top-games {
+      width: 125px !important;
+      height: 100% !important;
+      text-align: center !important;
+      text-indent: inherit !important;
+      background-color: inherit !important;
+      border: inherit !important;
+      opacity: inherit !important;
+
+      &.active {
+        background-color: inherit !important;
+        border-bottom: 3px solid $main-orange-color !important;
+        padding-bottom: 20px !important;
+      }
+    }
+  }
+}
+
+.carousel-item.game__slider.active, .carousel-item.game__slider.next, .carousel-item.game__slider.prev {
+  display: flex;
+  justify-content: space-around;
+}

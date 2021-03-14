@@ -1,0 +1,73 @@
+.modal-content {
+    background-color: transparent !important;
+    background-image: url('/img/horizon-bg.png');
+    color: #fff;
+}
+.modal-header {
+    border: inherit !important;
+    align-items: baseline !important;
+    padding: 1rem 3rem !important;
+}
+
+.modal-footer {
+    border: inherit !important;
+    display: flex;
+    flex-direction: column !important;
+    justify-content: space-around !important;
+    align-items: center !important;
+    padding: 1rem 3rem !important;
+}
+
+.modal-header .close {
+    padding: 1rem 1rem;
+    margin: -1rem -1rem -1rem auto;
+    background-color: transparent;
+    font-size: 40px;
+    color: #fff;
+    opacity: .5;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 3rem !important;
+
+    &__title {
+        font-size: 23px !important;
+        line-height: 28px !important;
+        font-weight: bold !important;
+        text-transform: uppercase;
+    }
+
+}
+
+.modal-body__input {
+    background-color: #18151a;
+    color: #fff;
+    width: 100%;
+    height: 50px;
+    padding-left: 25px;
+    margin: 10px 0;
+}
+
+.modal__copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width:768px) {
+        flex-direction: initial;
+    }
+
+    &-text {
+        padding: 10px 5px;
+        color: $text-color-dark-bg;
+    }
+    &-link {
+        padding: 10px 5px;
+        color: #fff;
+        text-decoration: underline;
+    }
+}

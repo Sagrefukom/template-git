@@ -1,0 +1,58 @@
+.warranty {
+
+    &__block {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        background-color: $games-bg-color;
+        width: 100%;
+
+        &::after {
+            position: absolute;
+            content: "";
+            width: 0;
+            height: 3px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: $main-purple-color;
+            transition: all 1s;
+        }
+          
+        &:hover::after {
+            width: 100%;
+        }
+
+        @media (min-width:992px) {
+            width: 33%;
+        }    
+    }
+    &__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: baseline;
+        max-width: 261px;
+        height: 100px;
+
+        &-title {
+            font-size: 16px;
+            line-height: 20px;
+            color: #fff;
+        }
+        &-normal {
+            font-size: 14px;
+            line-height: 18px;
+            color: $text-color-dark-bg;
+        }
+    }
+    &__icon {
+
+        &-item {
+            width: 50px;
+            object-fit: cover;
+            object-position: center;
+            margin: 20px;
+        }
+    }
+}

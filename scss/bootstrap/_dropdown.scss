@@ -1,0 +1,15 @@
+.dropdown {
+    
+    @media (min-width:550px) {
+        display: none;
+    }
+}
+
+
+.dropdown-menu.show {
+    background-color: $btn-orange-color !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+}
+

@@ -1,0 +1,43 @@
+.games {
+    position: relative;
+        background-color: $bg-color;
+        @include flex-mobile ();
+
+    &__warranty {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+
+        @media (min-width:768px) {
+            flex-direction: initial;
+            justify-content: space-between;
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+            // position: absolute;
+        }
+    }
+    &__container {
+        max-width: 1600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        width: 100%;
+        padding: 40px 0;
+    }
+
+    &__game {
+        color: #fff;
+        position: relative;
+    }
+
+    &__description {
+        width: 100%;
+        &-block {
+            color: #fff;
+            position: relative;
+        }
+    }
+}
