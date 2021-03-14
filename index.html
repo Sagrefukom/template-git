@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>template</title>
+
+    <link rel="stylesheet" href="./css/style.min.css">
+
+</head>
+<body>
+    
+    <header class="header">
+        <div class="header__container">
+            <div class="header__top">
+                <div class="header__left">
+                    <a class="logo" href="#"><img class="logo-item" src="./img/logo.png" alt="" class="logo__img"></a>
+                 </div>
+                 <div class="header__right">
+                     <div class="header__burger burger">
+                         <div id="burger-button" class="burger__button">
+                             <img src="./img/burger-icon.png" alt="">
+                         </div>
+                     </div>
+                     <form class="header__form form" method="GET">
+                         <span class="form-icon"><img src="./img/icon-loupe.png" alt=""></span>
+                         <input class="form__input" placeholder="Search game..." type="text" name="text">
+                     </form>
+                     <div class="header__right-btn btn">
+                        <a type="button" class="btn-orange" data-toggle="modal" data-target="#modal-register" >
+                            Register
+                        </a>
+                        <a type="button" class="btn-purple" data-toggle="modal" data-target="#modal-login" >
+                            Login
+                        </a>
+                    </div>
+                     <div class="header__nav nav">
+                         <a href="#" class="nav__link">Home</a>
+                         <a href="#" class="nav__link">About</a>
+                         <a href="#" class="nav__link">Games</a>
+                         <a href="#" class="nav__link">News</a>
+                         <a href="#" class="nav__link">Contacts</a>
+                         <a href="#" class="nav__link">Terms and conditions of use</a>
+                         <a href="#" class="nav__link">Secure payment</a>
+                       </div> 
+                 </div>
+            </div>
+            <div class="header__bottom">
+                <a href="#" class="nav__link">Home</a>
+                <a href="#" class="nav__link">About</a>
+                <a href="#" class="nav__link">Games</a>
+                <a href="#" class="nav__link">News</a>
+                <a href="#" class="nav__link">Contacts</a>
+                <a href="#" class="nav__link">Terms and conditions of use</a>
+                <a href="#" class="nav__link">Secure payment</a>
+            </div>
+        </div>
+
+    </header>
+    
+    <main class="main">
+        <section class="home">
+            <div  id="carousel-horizon" class="home__container carousel slide" data-ride="carousel">
+                <div class="carousel-inner home__horizon horizon">
+                    <ol class="carousel-indicators carousel-indicators__horizon">
+                        <li data-target="#carousel-horizon" data-slide-to="0" class="carousel-indicators__item active"></li>
+                        <li data-target="#carousel-horizon" data-slide-to="1" class="carousel-indicators__item"></li>
+                        <li data-target="#carousel-horizon" data-slide-to="2" class="carousel-indicators__item"></li>
+                    </ol>
+                    <div class="carousel-item horizon__slider active">
+                        <img class="horizon__slider-image" src="./img/horizon-bg.png" alt="...">
+                        <div class=" horizon__text ">
+                            <h1 class="horizon__text-title">horizon</h1>
+                            <p class="horizon__text-title--subtitle">forbidden west</p>
+                            <p class="horizon__text-normal">Horizon Forbidden West is 
+                                an upcoming action role-playing game developed
+                                by Guerrilla Games and published by Sony Interactive Entertainment</p>
+                            <a class="btn-orange">play now</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item horizon__slider ">
+                        <img class="horizon__slider-image" src="./img/horizon-bg.png" alt="...">
+                        <div class=" horizon__text ">
+                            <h1 class="horizon__text-title">horizon</h1>
+                            <p class="horizon__text-title--subtitle">forbidden west</p>
+                            <p class="horizon__text-normal">Horizon Forbidden West is 
+                                an upcoming action role-playing game developed
+                                by Guerrilla Games and published by Sony Interactive Entertainment</p>
+                            <a class="btn-orange">play now</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item horizon__slider ">
+                        <img class="horizon__slider-image" src="./img/horizon-bg.png" alt="...">
+                        <div class=" horizon__text ">
+                            <h1 class="horizon__text-title">horizon</h1>
+                            <p class="horizon__text-title--subtitle">forbidden west</p>
+                            <p class="horizon__text-normal">Horizon Forbidden West is 
+                                an upcoming action role-playing game developed
+                                by Guerrilla Games and published by Sony Interactive Entertainment</p>
+                            <a class="btn-orange">play now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="games">
+            <div class="games__warranty warranty">
+                <div class="warranty__block">
+                    <div class="warranty__icon">
+                        <img src="./img/delivery-icon.png" alt="" class="warranty__icon-item">
+                    </div>
+                    <div class="warranty__text">
+                        <p class="warranty__text-title">Free Delivery</p>
+                        <p class="warranty__text-normal">Free Shipping On All Order 
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    </div>
+                </div>
+                <div class="warranty__block">
+                    <div class="warranty__icon">
+                        <img src="./img/money-icon.png" alt="" class="warranty__icon-item">
+                    </div>
+                    <div class="warranty__text">
+                        <p class="warranty__text-title">Money Return</p>
+                        <p class="warranty__text-normal">Back Guarantee in 7 days 
+                            dolor sit amet consectetur adipisicing elit. </p>
+                    </div>
+                </div>
+                <div class="warranty__block">
+                    <div class="warranty__icon">
+                        <img src="./img/discount-icon.png" alt="" class="warranty__icon-item">
+                    </div>
+                    <div class="warranty__text">
+                        <p class="warranty__text-title">Member Discount</p>
+                        <p class="warranty__text-normal">On every order over $130.00 consectetuer </p>
+                    </div>
+                </div>
+            </div>
+            <div class="games__container">
+                <h3 class="wrapper__title">Top games</h3>
+                <div  id="carousel-games" class="games__container carousel slide" data-ride="carousel">
+                    <div class="carousel-inner games__game game">
+                        <ol class="carousel-indicators carousel-indicators__top-games">
+                            <li data-target="#carousel-games" data-slide-to="0" class="carousel-indicators__item-top-games active"> All</li>
+                            <li data-target="#carousel-games" data-slide-to="1" class="carousel-indicators__item-top-games">Adventure</li>
+                            <li data-target="#carousel-games" data-slide-to="2" class="carousel-indicators__item-top-games">Racing & Flying</li>
+                        </ol>
+                        
+                            <div class="carousel-item game__slider active">
+
+                                <div class="game-slick">
+                                    <div class="game__slider-slick">    
+                                        <div class=" game__item ">
+                                            <div class="game__item-image--buttons">
+                                                <a href="#" class="btn-purple">Read more</a>
+                                                <a href="#" class="btn-orange">buy now</a>
+                                            </div>
+                                            <img class="game__item-image" src="./img/game-rachet.png" alt="...">
+                                            <div class="game__title-triangle"></div>
+                                            <div class="game__item-deal--cost">-30%</div>
+                                            <div class="game__item-description">
+                                                <div class="game__title">Rachet & Clank: Rift Apart</div>
+                                                <div class="game__rating">
+                                                    <div class="game__rating-stars">
+                                                        <img src="./img/star-yellow.png" alt="">
+                                                        <img src="./img/star-yellow.png" alt="">
+                                                        <img src="./img/star-yellow.png" alt="">
+                                                        <img src="./img/star-yellow.png" alt="">
+                                                        <img src="./img/star.png" alt="">
+                                                    </div>
+                                                    <div class="game__rating-cost">
+                                                        <p class="game__rating-cost--normal">$62,02</p>
+                                                        <p class="game__rating-cost--sale">$40,95</p>
+                                                    </div>
+                                                </div>
+                                                <div class="game__description">
+                                                    <p class="game__description-text">For norland produce age wishin.To fogure on it spring season up.
+                                                        Her provision accutenes had exelent two whi intention.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class=" game__item ">
+                                            <div class="game__item-image--buttons">
+                                                <a href="#" class="btn-purple">Read more</a>
+                                                <a href="#" class="btn-orange">buy now</a>
+                                            </div>
+                                            <img class="game__item-image" src="./img/game-horizon.png" alt="...">
+                                            <div class="game__title-triangle"></div>
+                                            <div class="game__item-deal--cost">-50%</div>
+                                            <div class="game__item-description">
+                                                <div class="game__title">Horzon Forbidden West</div>
+                                                <div class="game__rating">
+                                                    <div class="game__rating-stars">
+                                                        <img src="./img/star-yellow.png" alt="">
+                                                        <img src="./img/star-yellow.png" alt="">
+                                                        <img src="./img/star-yellow.png" alt="">
+                                                        <img src="./img/star-yellow.png" alt="">
+                                                        <img src="./img/star.png" alt="">
+                                                    </div>
+                                                    <div class="game__rating-cost">
+                                                        <p class="game__rating-cost--normal">$282,02</p>
+                                                        <p class="game__rating-cost--sale">$140,95</p>
+                                                    </div>
+                                                </div>
+                                                <div class="game__description">
+                                                    <p class="game__description-text">Horizon Forbidden West is an upcoming
+                                                         action role-playing game developed by Gurellia Games and published
+                                                          by Sony Interractive Entertainment</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class=" game__item ">
+                                            <div class="game__item-image--buttons">
+                                                <a href="#" class="btn-purple">Read more</a>
+                                                <a href="#" class="btn-orange">buy now</a>
+                                            </div>
+                                            <img class="game__item-image" src="./img/game-sackboy.png" alt="...">
+                                            <div class="game__item-description">
+                                                <div class="game__title">Sackboy .A Big Adventure</div>
+                                                <div class="game__rating">
+                                                    <div class="game__rating-stars">
+                                                        <img src="./img/star-yellow.png" alt="">
+                                                        <img src="./img/star-yellow.png" alt="">
+                                                        <img src="./img/star-yellow.png" alt="">
+                                                        <img src="./img/star-yellow.png" alt="">
+                                                        <img src="./img/star.png" alt="">
+                                                    </div>
+                                                    <div class="game__rating-cost">
+                                                        <p class="game__rating-cost--normal"></p>
+                                                        <p class="game__rating-cost--sale">$85,95</p>
+                                                    </div>
+                                                </div>
+                                                <div class="game__description">
+                                                    <p class="game__description-text">For norland produce age wishing.
+                                                         To figure on it spring season up.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class=" game__item ">
+                                            <div class="game__item-image--buttons">
+                                                <a href="#" class="btn-purple">Read more</a>
+                                                <a href="#" class="btn-orange">buy now</a>
+                                            </div>
+                                            <img class="game__item-image" src="./img/game-crash.png" alt="...">
+                                            <div class="game__item-description">
+                                                <div class="game__title">Crash Bandicoot 4 - It's About Time</div>
+                                                <div class="game__rating">
+                                                    <div class="game__rating-stars">
+                                                        <img src="./img/star-yellow.png" alt="">
+                                                        <img src="./img/star-yellow.png" alt="">
+                                                        <img src="./img/star-yellow.png" alt="">
+                                                        <img src="./img/star-yellow.png" alt="">
+                                                        <img src="./img/star.png" alt="">
+                                                    </div>
+                                                    <div class="game__rating-cost">
+                                                        <p class="game__rating-cost--normal"></p>
+                                                        <p class="game__rating-cost--sale">$240,95</p>
+                                                    </div>
+                                                </div>
+                                                <div class="game__description">
+                                                    <p class="game__description-text">For norland produce age wishin.To fogure on it spring season up.
+                                                        Her provision accutenes had exelent two whi intention.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>   
+                                </div>
+                            </div>
+                            <div class="carousel-item game__slider ">
+                                <!-- <div class="game-slick">
+                                    <div class="game__slider-slick">    
+                                        
+                                        <div class=" game__item ">
+                                            <div class="game__item-image--buttons">
+                                                <a href="#" class="btn-purple">Read more</a>
+                                                <a href="#" class="btn-orange">buy now</a>
+                                            </div>
+                                            <img class="game__item-image" src="./img/game-horizon.png" alt="...">
+                                            <div class="game__title-triangle"></div>
+                                            <div class="game__item-deal--cost">-50%</div>
+                                            <div class="game__item-description">
+                                                <div class="game__title">Horzon Forbidden West</div>
+                                                <div class="game__rating">
+                                                    <div class="game__rating-stars">
+                                                        <img src="./img/star-yellow.png" alt="">
+                                                        <img src="./img/star-yellow.png" alt="">
+                                                        <img src="./img/star-yellow.png" alt="">
+                                                        <img src="./img/star-yellow.png" alt="">
+                                                        <img src="./img/star.png" alt="">
+                                                    </div>
+                                                    <div class="game__rating-cost">
+                                                        <p class="game__rating-cost--normal">$282,02</p>
+                                                        <p class="game__rating-cost--sale">$140,95</p>
+                                                    </div>
+                                                </div>
+                                                <div class="game__description">
+                                                    <p class="game__description-text">Horizon Forbidden West is an upcoming
+                                                         action role-playing game developed by Gurellia Games and published
+                                                          by Sony Interractive Entertainment</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class=" game__item ">
+                                            <div class="game__item-image--buttons">
+                                                <a href="#" class="btn-purple">Read more</a>
+                                                <a href="#" class="btn-orange">buy now</a>
+                                            </div>
+                                            <img class="game__item-image" src="./img/game-sackboy.png" alt="...">
+                                            <div class="game__item-description">
+                                                <div class="game__title">Sackboy .A Big Adventure</div>
+                                                <div class="game__rating">
+                                                    <div class="game__rating-stars">
+                                                        <img src="./img/star-yellow.png" alt="">
+                                                        <img src="./img/star-yellow.png" alt="">
+                                                        <img src="./img/star-yellow.png" alt="">
+                                                        <img src="./img/star-yellow.png" alt="">
+                                                        <img src="./img/star.png" alt="">
+                                                    </div>
+                                                    <div class="game__rating-cost">
+                                                        <p class="game__rating-cost--normal"></p>
+                                                        <p class="game__rating-cost--sale">$85,95</p>
+                                                    </div>
+                                                </div>
+                                                <div class="game__description">
+                                                    <p class="game__description-text">For norland produce age wishing.
+                                                         To figure on it spring season up.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>   
+                                </div> -->
+                                <div class=" game__item ">
+                                    <div class="game__item-image--buttons">
+                                        <a href="#" class="btn-purple">Read more</a>
+                                        <a href="#" class="btn-orange">buy now</a>
+                                    </div>
+                                    <img class="game__item-image" src="./img/game-horizon.png" alt="...">
+                                    <div class="game__title-triangle"></div>
+                                    <div class="game__item-deal--cost">-50%</div>
+                                    <div class="game__item-description">
+                                        <div class="game__title">Horzon Forbidden West</div>
+                                        <div class="game__rating">
+                                            <div class="game__rating-stars">
+                                                <img src="./img/star-yellow.png" alt="">
+                                                <img src="./img/star-yellow.png" alt="">
+                                                <img src="./img/star-yellow.png" alt="">
+                                                <img src="./img/star-yellow.png" alt="">
+                                                <img src="./img/star.png" alt="">
+                                            </div>
+                                            <div class="game__rating-cost">
+                                                <p class="game__rating-cost--normal">$282,02</p>
+                                                <p class="game__rating-cost--sale">$140,95</p>
+                                            </div>
+                                        </div>
+                                        <div class="game__description">
+                                            <p class="game__description-text">Horizon Forbidden West is an upcoming
+                                                 action role-playing game developed by Gurellia Games and published
+                                                  by Sony Interractive Entertainment</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" game__item ">
+                                    <div class="game__item-image--buttons">
+                                        <a href="#" class="btn-purple">Read more</a>
+                                        <a href="#" class="btn-orange">buy now</a>
+                                    </div>
+                                    <img class="game__item-image" src="./img/game-sackboy.png" alt="...">
+                                    <div class="game__item-description">
+                                        <div class="game__title">Sackboy .A Big Adventure</div>
+                                        <div class="game__rating">
+                                            <div class="game__rating-stars">
+                                                <img src="./img/star-yellow.png" alt="">
+                                                <img src="./img/star-yellow.png" alt="">
+                                                <img src="./img/star-yellow.png" alt="">
+                                                <img src="./img/star-yellow.png" alt="">
+                                                <img src="./img/star.png" alt="">
+                                            </div>
+                                            <div class="game__rating-cost">
+                                                <p class="game__rating-cost--normal"></p>
+                                                <p class="game__rating-cost--sale">$85,95</p>
+                                            </div>
+                                        </div>
+                                        <div class="game__description">
+                                            <p class="game__description-text">For norland produce age wishing.
+                                                 To figure on it spring season up.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item game__slider ">
+
+                                <!-- <div class="game-slick">
+                                    <div class="game__slider-slick">    
+                                        <div class=" game__item ">
+                                            <div class="game__item-image--buttons">
+                                                <a href="#" class="btn-purple">Read more</a>
+                                                <a href="#" class="btn-orange">buy now</a>
+                                            </div>
+                                            <img class="game__item-image" src="./img/game-rachet.png" alt="...">
+                                            <div class="game__title-triangle"></div>
+                                            <div class="game__item-deal--cost">-30%</div>
+                                            <div class="game__item-description">
+                                                <div class="game__title">Rachet & Clank: Rift Apart</div>
+                                                <div class="game__rating">
+                                                    <div class="game__rating-stars">
+                                                        <img src="./img/star-yellow.png" alt="">
+                                                        <img src="./img/star-yellow.png" alt="">
+                                                        <img src="./img/star-yellow.png" alt="">
+                                                        <img src="./img/star-yellow.png" alt="">
+                                                        <img src="./img/star.png" alt="">
+                                                    </div>
+                                                    <div class="game__rating-cost">
+                                                        <p class="game__rating-cost--normal">$62,02</p>
+                                                        <p class="game__rating-cost--sale">$40,95</p>
+                                                    </div>
+                                                </div>
+                                                <div class="game__description">
+                                                    <p class="game__description-text">For norland produce age wishin.To fogure on it spring season up.
+                                                        Her provision accutenes had exelent two whi intention.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class=" game__item ">
+                                            <div class="game__item-image--buttons">
+                                                <a href="#" class="btn-purple">Read more</a>
+                                                <a href="#" class="btn-orange">buy now</a>
+                                            </div>
+                                            <img class="game__item-image" src="./img/game-crash.png" alt="...">
+                                            <div class="game__item-description">
+                                                <div class="game__title">Crash Bandicoot 4 - It's About Time</div>
+                                                <div class="game__rating">
+                                                    <div class="game__rating-stars">
+                                                        <img src="./img/star-yellow.png" alt="">
+                                                        <img src="./img/star-yellow.png" alt="">
+                                                        <img src="./img/star-yellow.png" alt="">
+                                                        <img src="./img/star-yellow.png" alt="">
+                                                        <img src="./img/star.png" alt="">
+                                                    </div>
+                                                    <div class="game__rating-cost">
+                                                        <p class="game__rating-cost--normal"></p>
+                                                        <p class="game__rating-cost--sale">$240,95</p>
+                                                    </div>
+                                                </div>
+                                                <div class="game__description">
+                                                    <p class="game__description-text">For norland produce age wishin.To fogure on it spring season up.
+                                                        Her provision accutenes had exelent two whi intention.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>   
+                                </div> -->
+                                <div class=" game__item ">
+                                    <div class="game__item-image--buttons">
+                                        <a href="#" class="btn-purple">Read more</a>
+                                        <a href="#" class="btn-orange">buy now</a>
+                                    </div>
+                                    <img class="game__item-image" src="./img/game-rachet.png" alt="...">
+                                    <div class="game__title-triangle"></div>
+                                    <div class="game__item-deal--cost">-30%</div>
+                                    <div class="game__item-description">
+                                        <div class="game__title">Rachet & Clank: Rift Apart</div>
+                                        <div class="game__rating">
+                                            <div class="game__rating-stars">
+                                                <img src="./img/star-yellow.png" alt="">
+                                                <img src="./img/star-yellow.png" alt="">
+                                                <img src="./img/star-yellow.png" alt="">
+                                                <img src="./img/star-yellow.png" alt="">
+                                                <img src="./img/star.png" alt="">
+                                            </div>
+                                            <div class="game__rating-cost">
+                                                <p class="game__rating-cost--normal">$62,02</p>
+                                                <p class="game__rating-cost--sale">$40,95</p>
+                                            </div>
+                                        </div>
+                                        <div class="game__description">
+                                            <p class="game__description-text">For norland produce age wishin.To fogure on it spring season up.
+                                                Her provision accutenes had exelent two whi intention.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" game__item ">
+                                    <div class="game__item-image--buttons">
+                                        <a href="#" class="btn-purple">Read more</a>
+                                        <a href="#" class="btn-orange">buy now</a>
+                                    </div>
+                                    <img class="game__item-image" src="./img/game-crash.png" alt="...">
+                                    <div class="game__item-description">
+                                        <div class="game__title">Crash Bandicoot 4 - It's About Time</div>
+                                        <div class="game__rating">
+                                            <div class="game__rating-stars">
+                                                <img src="./img/star-yellow.png" alt="">
+                                                <img src="./img/star-yellow.png" alt="">
+                                                <img src="./img/star-yellow.png" alt="">
+                                                <img src="./img/star-yellow.png" alt="">
+                                                <img src="./img/star.png" alt="">
+                                            </div>
+                                            <div class="game__rating-cost">
+                                                <p class="game__rating-cost--normal"></p>
+                                                <p class="game__rating-cost--sale">$240,95</p>
+                                            </div>
+                                        </div>
+                                        <div class="game__description">
+                                            <p class="game__description-text">For norland produce age wishin.To fogure on it spring season up.
+                                                Her provision accutenes had exelent two whi intention.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                         
+                </div>
+            </div>
+            <div id="carousel-description" class="carousel slide games__description" data-ride="carousel">
+                <div class="carousel-inner games__description-block block">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-description" data-slide-to="0" class="carousel-indicators__item active"></li>
+                    <li data-target="#carousel-description" data-slide-to="1" class="carousel-indicators__item"></li>
+                    <li data-target="#carousel-description" data-slide-to="2" class="carousel-indicators__item"></li>
+                </ol>
+                
+                  <div class="carousel-item block__slider active">
+                    <img class="block__slider-image" src="./img/games-desc-bg.png" alt="...">
+                   <div class="block__slider-text">
+                    <div class="block__icon">
+                        <img class="block__icon-item" src="./img/block-icon.png" alt="">
+                        <p class="block__icon-description">valerie rish</p>
+                    </div>
+                    <div class="block__description">
+                        <p class="block__description-item">The final scene of Horizon Zero
+                             Dawn reveals HADES has not been completely defeated. A dark entity
+                                - thought to be HADES - shoots out of a pile of rubble and is
+                                 captured by Sylens, a secondary character thought to be Aloy's ally.</p>
+                        <p class="block__description-item--cover">He seems hungry for knowledge home
+                             the evil system's "masters" and seems ready to stop at nothing to
+                              acquire it. He could be the main villain of Horizon Forbidden West
+                               or the catalyst fot its events at the very least.</p>
+                    </div>
+                   </div>
+                  </div>
+                  <div class="carousel-item block__slider">
+                    <img class="block__slider-image" src="./img/games-desc-bg.png" alt="...">
+                   <div class="block__slider-text">
+                    <div class="block__icon">
+                        <img class="block__icon-item" src="./img/block-icon.png" alt="">
+                        <p class="block__icon-description">valerie rish</p>
+                    </div>
+                    <div class="block__description">
+                        <p class="block__description-item">The final scene of Horizon Zero
+                             Dawn reveals HADES has not been completely defeated. A dark entity
+                                - thought to be HADES - shoots out of a pile of rubble and is
+                                 captured by Sylens, a secondary character thought to be Aloy's ally.</p>
+                        <p class="block__description-item--cover">He seems hungry for knowledge home
+                             the evil system's "masters" and seems ready to stop at nothing to
+                              acquire it. He could be the main villain of Horizon Forbidden West
+                               or the catalyst fot its events at the very least.</p>
+                    </div>
+                   </div>
+                  </div>
+                  <div class="carousel-item block__slider">
+                    <img class="block__slider-image" src="./img/games-desc-bg.png" alt="...">
+                   <div class="block__slider-text">
+                    <div class="block__icon">
+                        <img class="block__icon-item" src="./img/block-icon.png" alt="">
+                        <p class="block__icon-description">valerie rish</p>
+                    </div>
+                    <div class="block__description">
+                        <p class="block__description-item">The final scene of Horizon Zero
+                             Dawn reveals HADES has not been completely defeated. A dark entity
+                                - thought to be HADES - shoots out of a pile of rubble and is
+                                 captured by Sylens, a secondary character thought to be Aloy's ally.</p>
+                        <p class="block__description-item--cover">He seems hungry for knowledge home
+                             the evil system's "masters" and seems ready to stop at nothing to
+                              acquire it. He could be the main villain of Horizon Forbidden West
+                               or the catalyst fot its events at the very least.</p>
+                    </div>
+                   </div>
+                  </div>
+                </div>  
+            </div>
+        </section>
+        <section class="about">
+            <div class="about__container">
+                <div class="about__wrapper wrapper wrapper-reverse">
+                    <div class="wrapper__description">
+                        <h3 class="wrapper__title">a few words about</h3>
+                        <p class="wrapper__text-normal">One of tPlaystation's biggest game expected
+                             to the released on the Playstation 5 in 2021 is Horizon Forbidden West,
+                              a sequel to Guerilla Games' open-world sci-fi game from 2017.
+                               Sony Interactive Entertainment has continued to pull back the curtain
+                                on the long-awaited sequel where Aloy's adventure continues.</p>
+                        <p class="wrapper__text-normal">SIE and Guerrilla gave gamers their first
+                             in-depth look at the upcoming open-world title during
+                              a PS5 reveal event on June 11.</p>
+                        <a class="btn-purple" href="#">learn more</a>
+                    </div>
+                    <div class="wrapper__img">
+                        <img class="wrapper__img-item" src="./img/horizon-about.png" alt="">
+                    </div>
+                </div>
+                <div class="wrapper__description">
+                    <p class="wrapper__text-normal">Leading up to those colossal announcements,
+                        Guerrilla has teased the sequel's existence with a handful of mysterious
+                         job openings and even a few accidental social media posts.
+                          But now the title has been confirmed as an early
+                           release to show off the technical.</p>
+                    <p class="wrapper__title-subtitle">What could the Horizon
+                        Forbidden West story be about?</p>
+                    <p class="wrapper__text-normal">Gamers play as Aloy, a member of one of many tribes
+                        that stumbles upon the origins of the mechanical beasts the rule the world.
+                        They were created by a company named Faro Automated Solutions, nearly 1,000 ago
+                         as "peacemakers", but need biomass for fuel. Eventually, they consumed so much
+                          of the Earth's biosphere that it eradicated most humans. But there was a plan B.</p>
+                </div>
+                <div class="about__wrapper wrapper">
+                    <div class="wrapper__description">
+                        <h3 class="wrapper__title">game features</h3>
+                        <ul>
+                            <li class="wrapper__text-normal">Faro also created an artifical
+                                 intelligence named GAIA, that could shut down</li>
+                            <li class="wrapper__text-normal">Make the Earth livable for humans again</li>
+                            <li class="wrapper__text-normal">System designed to teach humans to not repeat
+                                 the mistakes of the last generation, was sabotaged by Faro
+                                  and led to the rize of Aloy's tribal society.</li>
+                            <li class="wrapper__text-normal">System designed to teach humans to not repeat
+                                    the mistakes of the last generation, was sabotaged by Faro
+                                     and led to the rize of Aloy's tribal society.</li>
+                            <li class="wrapper__text-normal">System designed to teach humans to not repeat
+                                the mistakes of the last generation, was sabotaged by Faro
+                                    and led to the rize of Aloy's tribal society.</li>
+                        </ul>
+                    </div>
+                    <div class="wrapper__img">
+                        <img class="wrapper__img-item" src="./img/wrapper-img.png" alt="">
+                    </div>
+                </div>
+                <div class="wrapper__description">
+                    <p class="wrapper__text-normal">Leading up to those colossal announcements,
+                        Guerrilla has teased the sequel's existence with a handful of mysterious
+                         job openings and even a few accidental social media posts.
+                          But now the title has been confirmed as an early
+                           release to show off the technical.</p>
+                </div>
+                <div class="about__sidebar">
+                    <div class="games__container">
+                        <div class=" games__game game">
+                            <div class="game__item game__item-sidebar">
+                                <div class="game__item-deal">
+                                    <div class="game__title game__title-upper">deal of the day</div>
+                                    <div class="game__title-triangle"></div>
+                                    <div class="game__item-deal--cost">-70%</div>
+                                </div>
+                                <img class="game__item-image" src="./img/game-watch-dogs.png" alt="...">
+                                <div class="game__item-description">
+                                    <div class="game__title">Watch Dog's. Legion</div>
+                                    <div class="game__rating">
+                                        <div class="game__rating-stars">
+                                            <img src="./img/star-yellow.png" alt="">
+                                            <img src="./img/star-yellow.png" alt="">
+                                            <img src="./img/star-yellow.png" alt="">
+                                            <img src="./img/star-yellow.png" alt="">
+                                            <img src="./img/star.png" alt="">
+                                        </div>
+                                        <div class="game__rating-cost">
+                                            <p class="game__rating-cost--normal">$100,02</p>
+                                            <p class="game__rating-cost--sale">$240,95</p>
+                                        </div>
+                                    </div>
+                                    <div class="game__description">
+                                        <p class="game__description-text">For norland produce age wishin.To fogure on it spring season up.
+                                            Her provision accutenes had exelent two whi intention.</p>
+                                    </div>
+                                    <div class="game__count">
+                                        <div class="game__count-item">
+                                            <p class="game__count-item--numeral">44</p>
+                                            <p class="game__count-item--time">days</p>
+                                        </div>
+                                        <div class="game__count-item">
+                                            <p class="game__count-item--numeral">44</p>
+                                            <p class="game__count-item--time">hours</p>
+                                        </div>
+                                        <div class="game__count-item">
+                                            <p class="game__count-item--numeral">44</p>
+                                            <p class="game__count-item--time">mins</p>
+                                        </div>
+                                        <div class="game__count-item">
+                                            <p class="game__count-item--numeral">44</p>
+                                            <p class="game__count-item--time">secs</p>
+                                        </div>
+                                        
+                                    </div>
+                                    <a href="" class="btn-orange btn-orange-sidebar">buy now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>     
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__part">
+                <div class="footer__part-title">
+                    <p class="footer__part-title--item">Menu</p>
+                </div>
+                <div class="footer__part-link">
+                    <a class="footer__part-link--text">Delivery</a>
+                </div>
+                <div class="footer__part-link">
+                    <a class="footer__part-link--text">Legal Notice</a>
+                </div>
+                <div class="footer__part-link">
+                    <a class="footer__part-link--text">Terms and conditions of use</a>
+                </div>
+                <div class="footer__part-link">
+                    <a class="footer__part-link--text">About us</a>
+                </div>
+                <div class="footer__part-link">
+                    <a class="footer__part-link--text">Secure payment</a>
+                </div>
+            </div>
+            <div class="footer__part">
+                    <div class="footer__part-cover">
+                        <div class="footer__part-title">
+                            <p class="footer__part-title--item">Contact info & Payment</p>
+                        </div>
+                        <div class="footer__part-link">
+                            <img src="./img/geo.png" alt="" class="footer-icon">
+                            <p class="footer__part-copyright--text">Game store 507-Union Trade Centre UK</p>
+                        </div>
+                        <div class="footer__part-link">
+                            <img src="./img/phone-call.png" alt="" class="footer-icon">
+                            <p class="footer__part-copyright--text">+38 789-789-7899</p>
+                        </div>
+                        <div class="footer__part-link">
+                            <img src="./img/email.png" alt="" class="footer-icon">
+                            <p class="footer__part-copyright--text">sales@yourcompany.com</p>
+                        </div>
+                    </div>
+                    <div class="footer__part-accordion accordion">
+                        <div class="accordion-item">
+                          <div class="accordion-item-title footer__part-title">
+                              <p class="footer__part-title--item">Contact info & Payment</p>
+                          </div>
+                          <div class="accordion-item-content footer__part-link">
+                              <img src="./img/geo.png" alt="" class="footer-icon">
+                                  <p class="footer__part-copyright--text">Game store 507-Union Trade Centre UK</p>
+                          </div>
+                          <div class="accordion-item-content footer__part-link">
+                              <img src="./img/phone-call.png" alt="" class="footer-icon">
+                              <p class="footer__part-copyright--text">+38 789-789-7899</p>
+                          </div>
+                          <div class="accordion-item-content footer__part-link">
+                              <img src="./img/email.png" alt="" class="footer-icon">
+                                  <p class="footer__part-copyright--text">sales@yourcompany.com</p>
+                          </div>
+                        </div>
+                      </div>
+                <!-- <div class="dropdown">
+                    <a class="footer__part-title--item dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Contact info & Payment
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item footer__part-link" href="#">
+                        <img src="./img/geo.png" alt="" class="footer-icon">
+                        <p class="footer__part-copyright--text">Game store 507-Union Trade Centre UK</p>
+                      </a>
+                      <a class="dropdown-item footer__part-link" href="#">
+                        <img src="./img/phone-call.png" alt="" class="footer-icon">
+                        <p class="footer__part-copyright--text">+38 789-789-7899</p>
+                      </a>
+                      <a class="dropdown-item footer__part-link" href="#">
+                        <img src="./img/email.png" alt="" class="footer-icon">
+                        <p class="footer__part-copyright--text">sales@yourcompany.com</p>
+                      </a>
+                    </div>
+                </div> -->
+            </div>
+            <div class="footer__part">
+                <div class="footer__part-cover">
+                    <div class="footer__part-title">
+                        <p class="footer__part-title--item">Useful links</p>
+                    </div>
+                    <div class="footer__part-link">
+                        <a class="footer__part-link--text">Hot Trending</a>
+                    </div>
+                    <div class="footer__part-link">
+                        <a class="footer__part-link--text">Out Store</a>
+                    </div>
+                    <div class="footer__part-link">
+                        <a class="footer__part-link--text">New Arrival</a>
+                    </div>
+                    <div class="footer__part-link">
+                        <a class="footer__part-link--text">Best Seller</a>
+                    </div>
+                    <div class="footer__part-link">
+                        <a class="footer__part-link--text">Order Tracking</a>
+                    </div>
+                    <div class="footer__part-link">
+                        <a class="footer__part-link--text">Warranty and Servisec</a>
+                    </div>
+                </div>
+                <div class="footer__part-accordion accordion">
+                    <div class="accordion-item">
+                      <div class="accordion-item-title footer__part-title">
+                          <p class="footer__part-title--item">Useful links</p>
+                      </div>
+                      <div class="accordion-item-content footer__part-link">
+                        <a class="footer__part-link--text">Hot Trending</a>
+                      </div>
+                      <div class="accordion-item-content footer__part-link">
+                        <a class="footer__part-link--text">Out Store</a>
+                      </div>
+                      <div class="accordion-item-content footer__part-link">
+                        <a class="footer__part-link--text">New Arrival</a>
+                      </div>
+                      <div class="accordion-item-content footer__part-link">
+                        <a class="footer__part-link--text">Best Seller</a>
+                      </div>
+                      <div class="accordion-item-content footer__part-link">
+                        <a class="footer__part-link--text">Order Tracking</a>
+                      </div>
+                      <div class="accordion-item-content footer__part-link">
+                        <a class="footer__part-link--text">Warranty and Servisec</a>
+                      </div>
+                    </div>
+                  </div>
+                <!-- <div class="dropdown">
+                    <a class="footer__part-title--item dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Useful links
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item footer__part-link" href="#">
+                        <a class="footer__part-link--text">Hot Trending</a>
+                      </a>
+                      <a class="dropdown-item footer__part-link" href="#">
+                        <a class="footer__part-link--text">Out Store</a>
+                      </a>
+                      <a class="dropdown-item footer__part-link" href="#">
+                        <a class="footer__part-link--text">New Arrival</a>
+                      </a>
+                      <a class="dropdown-item footer__part-link" href="#">
+                        <a class="footer__part-link--text">Best Seller</a>
+                      </a>
+                      <a class="dropdown-item footer__part-link" href="#">
+                        <a class="footer__part-link--text">Order Tracking</a>
+                      </a>
+                      <a class="dropdown-item footer__part-link" href="#">
+                        <a class="footer__part-link--text">Warranty and Servisec</a>
+                      </a>
+                    </div>
+                </div> -->
+            </div>
+            <div class="footer__part">
+                <div class="footer__part-title">
+                    <p class="footer__part-title--item">Our Newsletter</p>
+                </div>
+                <div class="footer__part-link">
+                    <p class="footer__part-copyright--text">But now the title has been confirmed
+                         as an early release to show off the technical capabilities of the PS5 by</p>
+                </div>
+                <form class="footer__form form" method='GET'>
+                    <input class="form__input form__input-footer" type="email" name="email"  placeholder="Your email...">
+                    <button class="btn-orange" >subscribe</button>
+                </form>
+                <div class="footer__part-copyright">
+                    <img src="./img/facebook-icon.png" alt="" class="footer-icon">
+                    <img src="./img/twitter-icon.png" alt="" class="footer-icon">
+                    <img src="./img/linkedin-icon.png" alt="" class="footer-icon">
+                    <p class="footer__part-copyright--text">Copyright 2021.All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="modal fade modal-register" id="modal-register" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-body__title">Create Account</h3>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <input class="modal-body__input" type="text" name="text" method="GET" placeholder="Username">
+                    <input class="modal-body__input" type="email" name="email" method="GET" placeholder="Email">
+                    <input class="modal-body__input" type="password" name="password" method="GET" placeholder="Password">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn-orange" data-dismiss="modal">Register</button>
+                  <div class="modal__copyright">
+                      <p class="modal__copyright-text">Have Account?</p>
+                      <a href="#" class="modal__copyright-link">Login Here</a>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </div>
+      <div class="modal fade modal-login" id="modal-login" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-body__title">Sing in</h3>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <input class="modal-body__input" type="text" name="text" method="GET" placeholder="Username or email">
+                <input class="modal-body__input" type="password" name="password" method="GET" placeholder="Password">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn-purple" data-dismiss="modal">Login</button>
+              <div class="modal__copyright">
+                  <p class="modal__copyright-text">No Account?</p>
+                  <a href="#" class="modal__copyright-link">Register Here</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+    <script type="text/javascript" src="./js/main.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
